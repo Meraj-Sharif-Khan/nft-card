@@ -13,8 +13,8 @@
 
 ### Links
 
-- Solution URL: [solution URL]()
-- Live Site URL: [live site URL]()
+- Solution URL: [solution URL](https://www.frontendmentor.io/solutions/nft-preview-card-component-solution-html-css-FN_4yyha6k)
+- Live Site URL: [live site URL](https://meraj-sharif-khan.github.io/nft-card/)
 
 ### Built with
 
