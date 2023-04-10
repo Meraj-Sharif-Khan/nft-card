@@ -1,0 +1,135 @@
+:root {
+  --clr-primary: hsl(216, 50%, 16%);
+  --clr-secondary: hsl(217, 54%, 11%);
+  --clr-accent: hsl(178, 100%, 50%);
+
+  --clr-neutral-500: hsl(215, 32%, 27%);
+  --clr-neutral-400: hsl(215, 51%, 70%);
+  --clr-neutral-100: hsl(0, 0%, 100%);
+
+  --ff-primary: "Outfit", sans-serif;
+  --fw-semibold-600: 600;
+  --fw-regular-400: 400;
+  --fw-lite-300: 300;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Outfit", sans-serif;
+  background: var(--clr-secondary);
+
+  /* Only For center align this card  */
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+}
+
+/* Nft Card */
+.nft--card {
+  margin: 2.5rem;
+  padding: 2.5rem;
+  max-width: 32.5rem;
+  border-radius: 1.5rem;
+  background: var(--clr-primary);
+}
+.nft-image--group {
+  position: relative;
+}
+
+.nft__image {
+  display: inline-block;
+  width: 100%;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.nft-image--group .eye__icon {
+  background-color: hsla(178, 100%, 50%, 0.5);
+  border-radius: 1rem;
+  cursor: pointer;
+  display: grid;
+  height: 100%;
+  place-items: center;
+  position: absolute;
+  top: 0;
+  transition: opacity 0.3s;
+  width: 100%;
+}
+.nft-image--group .eye__icon:hover {
+  opacity: 0;
+}
+
+.nft--content {
+  display: grid;
+  gap: 1.5rem;
+}
+.nft__title {
+  margin-top: 2rem;
+  font-size: 2rem;
+  color: var(--clr-neutral-100);
+}
+
+.nft__description {
+  font-weight: var(--fw-regular-400);
+  font-size: 1.5rem;
+  color: var(--clr-neutral-400);
+}
+
+.nft-value__time {
+  white-space: nowrap;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--clr-neutral-500);
+}
+
+.nft-value__time .icon {
+  vertical-align: top;
+  margin-right: 0.5rem;
+  height: inherit;
+}
+
+.nft__value {
+  color: var(--clr-accent);
+  font-size: 1.5rem;
+}
+
+.nft__time {
+  color: var(--clr-neutral-400);
+  font-size: 1.5rem;
+}
+
+.nft-creator--group {
+  display: flex;
+  font-size: 1.5rem;
+  align-items: center;
+  color: #f7ffff;
+}
+
+.nft-creator--group > img {
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+  border-radius: 100%;
+  border: 1px solid var(--clr-neutral-100);
+}
+.creator__name::before {
+  content: "Creation Of";
+  margin-right: 5px;
+  color: var(--clr-neutral-400);
+}
+/* Hover */
+.nft__title:hover,
+.creator__name:hover {
+  color: var(--clr-accent);
+  cursor: pointer;
+}
